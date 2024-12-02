@@ -1,0 +1,38 @@
+
+h1, #todo{
+    background-color: bisque;
+}
+
+#adds, h1, #todo, .todoCard{
+    display: flex;
+    justify-content: center;
+}
+#btn{
+    width:60%;
+}
+
+.delbtn{
+    margin: 0.5em;
+    position: relative;
+    top: 170px; /* descend l'image de 170 pixels*/
+    left: -30px; /* deplacer a gauche de 30 pixels */
+}
+
+#todo{
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+#todoCards{
+    width: 100%;
+    flex-direction: row;
+    
+}
+.task{
+    width: 10em;
+    display: flex;
+    flex-direction: column; /* pour mettre en colonne les éléments*/
+}
+.todoCard{
+    width: 100%;
+}

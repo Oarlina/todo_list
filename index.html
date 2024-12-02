@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- pour pouvoir afficher la poubelle-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <!--titre-->
+        <h1>Todo list</h1>
+        <!-- pour afficher le bouton add a task-->
+         <div id="adds">
+             <div id="count"></div>
+             <button id="btn">Add a task</button>
+         </div>
+        <!-- bloc d'ajout de liste-->
+        <div id="todo">
+            <!-- la todo card-->
+            <div id="todoCards">
+                <div class="todoCard">
+                    <div class="task">
+                        <textarea id="titre" name="titre" maxlength="200" cols="10" rows="3">titre</textarea><!-- cols=longueur /rows=hauteur/  -->
+                        <textarea id="titre2" name="titre2" maxlength="200" cols="10" rows="10">titre2</textarea> <!-- maxlength correspond a la longueur de caractere-->
+                    </div>
+                    <span class="delbtn"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
