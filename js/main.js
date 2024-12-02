@@ -24,6 +24,11 @@ function addTask(){
     updateCount();
 }
 
+function updapteCount()
+{
+    let count = list.compterlist;
+    compterlist = 'you have ${count} to- dos.';
+}
 
 // on créer la fonction de suppression
 function deleteTask(task){
