@@ -39,7 +39,7 @@ body, #wrapper, #todoCards, #todoFinish, #todoCardsFinish{
 
 /*--------------------Autres--------------------*/
 #wrapper{
-    background-color: #adc8f1;
+    background: radial-gradient(#06439f,#4179cc, #adc8f1) /* cela va de l'interieur à l'exterieur */
 }
 #todoCardsFinish{
     background-color: ;
