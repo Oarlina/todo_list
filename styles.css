@@ -1,46 +1,64 @@
-
-
-#wrapper {
+/*--------------------Height et width--------------------*/
+body, #wrapper, #todoCards, #todoFinish, #todoCardsFinish{
     height: 100%;
 }
-h1, #todo{
-    background-color: bisque;
-}
-
-#adds, h1, #todo,#todoCards, .todoCard{
-    display: flex;
-    justify-content: center;
+.delBtn, .checkBtn{
+    height: fit-content; /* pour régler la hauteur */
 }
 #btn{
-    width:60%;
+    width:30%;
+}
+ #todo, #todoCards, .todoCard, #todoFinish,#todo, #todoCardsFinish, #todoCardsFinish{
+    width: 100%;
+}
+/*--------------------Display--------------------*/
+#adds, h1, h3, #todo, #todoCards, .todoCard, .task, .compteur, .realiser, #todoFinish, #todoCardsFinish{
+    display: flex;
+}
+#adds, h1, h3, #todo, #todoCards, .todoCard, #todoFinish, #todoCardsFinish{
+    justify-content: center; 
 }
 #adds{
     justify-content: space-around;
 }
-
-.delBtn{
-    margin: 0.5em;
-    position: relative;
-    top: 170px; /* descend l'image de 170 pixels*/
-    left: -30px; /* deplacer a gauche de 30 pixels */
-}
-
-#todo{
-    width: 100%;
-    margin-top: 0.5em;
-}
-
-#todoCards{
-    width: 100%;
-    height: 100%;
+#todoCards, #todoCardsFinish .compteur{
     flex-direction: row;
-    overflow-x: scroll; /* pour avoir une barre de defilement*/
+}
+.compteur, .realiser{
+    align-items: center; /* pour centrer verticalement*/
 }
 .task{
     width: 11em;
-    display: flex;
     flex-direction: column; /* pour mettre en colonne les éléments*/
 }
-.todoCard{
-    width: 100%;
+
+
+#btn{
+    background-color: #f56b25;
+}
+
+/*--------------------Autres--------------------*/
+#wrapper{
+    background-color: #adc8f1;
+}
+#todoCardsFinish{
+    background-color: ;
+}
+#todo, #todoFinish{
+    margin: 1em;
+}
+#todoCards, #todoCardsFinish{
+    overflow-x: scroll; /* pour avoir une barre de defilement*/
+}
+.delBtn{
+    margin: 0.5em;
+    position: relative; /* pour que l'icon soit déplacer*/
+    top: 170px; /* descend l'image de 170 pixels*/
+    left: -30px; /* deplacer a gauche de 30 pixels */
+}
+.checkBtn{
+    margin: 0.5em;
+    position: relative; /* pour que l'icon soit déplacer*/
+    top: 170px; /* descend l'image de 170 pixels*/
+    left: 30px; /* deplacer a droite de 30 pixels */
 }
